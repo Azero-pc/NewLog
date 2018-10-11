@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地址管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+    <link class="style" rel="stylesheet" type="text/css" href="css/style.css?v_001">
+</head>
+<iframe name="indexIframe" class="hide" src="./index.html" frameborder="0"></iframe>
+<body class="address">
+	<!-- 正在加载 -->
+	<div id="load" class="overlay mask">
+		<div class="loading">
+			<!-- <div id="foo"></div> -->
+			<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="circle" class="g-circles g-circles--v3">
+					<circle id="12" transform="translate(35, 16.698730) rotate(-30) translate(-35, -16.698730) " cx="35" cy="16.6987298" r="6"></circle>
+					<circle id="11" transform="translate(16.698730,35) rotate(-60) translate(-16.698730, -35) " cx="16.6987298" cy="35" r="6"></circle>
+					<circle id="10" transform="translate(10, 60) rotate(-90) translate(-10, -60) " cx="10" cy="60" r="6"></circle>
+					<circle id="9" transform="translate(16.698730, 85) rotate(-120) translate(-16.698730, -85) " cx="16.6987298" cy="85" r="6"></circle>
+					<circle id="8" transform="translate(35, 103.301270) rotate(-150) translate(-35, -103.301270) " cx="35" cy="103.30127" r="6"></circle>
+					<circle id="7" cx="60" cy="110" r="6"></circle>
+					<circle id="6" transform="translate(85, 103.301270) rotate(-30) translate(-85, -103.301270) " cx="85" cy="103.30127" r="6"></circle>
+					<circle id="5" transform="translate(103.301270, 85) rotate(-60) translate(-103.301270, -85) " cx="103.30127" cy="85" r="6"></circle>
+					<circle id="4" transform="translate(110, 60) rotate(-90) translate(-110, -60) " cx="110" cy="60" r="6"></circle>
+					<circle id="3" transform="translate(103.301270, 35) rotate(-120) translate(-103.301270, -35) " cx="103.30127" cy="35" r="6"></circle>
+					<circle id="2" transform="translate(85, 16.698730) rotate(-150) translate(-85, -16.698730) " cx="85" cy="16.6987298" r="6"></circle>
+					<circle id="1" cx="60" cy="10" r="6"></circle>
+				</g>
+			</svg>
+			<!-- <p>正在加载...</p> -->
+		</div>
+	</div>
+	<!-- 网络异常 -->
+	<div class="network_error">
+		<p>
+			<span>网络异常，请重试！</span>
+		</p>
+	</div>
+	<div class="addressbox">
+		<div class="addresscontbox">
+			<div class="mainbox">
+				<div class="addresscommoditylist">
+					<div class="addresslist">
+						<ul>
+							<li class="addChoice">
+								<div class="addressMaterials">
+									<h3><span class="addressNames">齐天大圣</span> <span class="addressNums">156****9000</span></h3>
+									<p>广东省广州市天河区龙口东横街丽柏国际酒店16号</p>
+								</div>
+							</li>
+							<li>
+								<div class="addressMaterials">
+									<h3><span class="addressNames">齐天大圣</span> <span class="addressNums">156****9000</span></h3>
+									<p>广东省广州市天河区龙口东横街丽柏国际酒店16号</p>
+								</div>
+							</li>
+							<li>
+								<div class="addressMaterials">
+									<h3><span class="addressNames">齐天大圣</span> <span class="addressNums">156****9000</span></h3>
+									<p>广东省广州市天河区龙口东横街丽柏国际酒店16号</p>
+								</div>
+							</li>
+							<li>
+								<div class="addressMaterials">
+									<h3><span class="addressNames">齐天大圣</span> <span class="addressNums">156****9000</span></h3>
+									<p>广东省广州市天河区龙口东横街丽柏国际酒店16号</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="addAddress">
+						<p><span>添加收货地址</span></p>
+					</div>
+					<div class="addbox">
+						<div class="noAddress">
+							<img src="./img/img12.png" alt="">
+							<p>暂无收货地址</p>
+						</div>
+					</div>
+				</div>
+				<div class="addressdetails">
+					<div class="detailsboxx">
+						<ul>
+							<li class="">
+								<p><b>姓名</b><input class="addName" maxlength="16" id="" type="text" placeholder="必填"></p>
+							</li>
+							<li class="">
+								<p><b>联系电话</b><input class="addPhone" maxlength="11" onkeyup="this.value=this.value.replace(/D/g,'')" oninput="value=value.replace(/[^\d]/g,'')" id="" type="text" placeholder="必填"></p>
+							</li>
+							<li class="citybox">
+								<p><b>所在地区</b><input class="addCity city" id="trigger2" type="text" placeholder="必填"></p>
+							</li>
+							<li class="">
+								<p><b>详情地址</b><input class="addDetails" maxlength="24" id="" type="text" placeholder="必填"></p>
+							</li>
+						</ul>
+						<!-- <p class="detailsName">姓名 <span>林小姐</span></p>
+						<p class="detailsPhone">联系电话 <span>13800138000</span></p>
+						<p class="detailsRegion">所在地区 <span>广东省广州市天河区</span></p>
+						<p class="detailsinfo">详情地址 <span>龙口东横街28号丽柏酒店</span></p> -->
+					</div>
+					<div class="setUpDefault">
+						<h3>设置默认</h3>
+						<p>每次下单都会使用该地址</p>
+						<div class="setUpswitch">
+							<span class="switch-on" id="wifi"><span class="slider"></span></span>
+						</div>
+					</div>
+					<div class="addressButtonbox">
+						<div class="addressbuttonCont">
+							<button disabled="disabled">保 存</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="index_mask cpt-dw-mask"></div>
+	<!-- 优惠券弹出框 -->
+    <div class="indexpopup_box">
+		<div>
+			<div class="indexpopup_cont" data-type="indexpopup_cont">
+				
+			</div>
+		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div class="Goodluck_background ">
+		<div class="Goodluck_rulesbox">
+			<div>
+				<div class="Goodluck_physical logout_box ">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="./js/jquery.min.js?v_001"></script>
+	<script src="./js/index.js?v_001"></script> -->
+	<script type="text/javascript" data-main="./js/index.js?v_001" src="./js/require.min.js?v_001"></script>
+	<!-- <div class="hide"><script src="https://s95.cnzz.com/z_stat.php?id=1262291806&web_id=1262291806" language="JavaScript"></script></div> -->
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>砍价</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+    <link class="style" rel="stylesheet" type="text/css" href="css/style.css?v_003">
+</head>
+<iframe name="indexIframe" class="hide" src="./index.html" frameborder="0"></iframe>
+<body class="share">
+	<!-- 正在加载 -->
+	<div id="load" class="overlay mask">
+		<div class="loading">
+			<!-- <div id="foo"></div> -->
+			<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="circle" class="g-circles g-circles--v3">
+					<circle id="12" transform="translate(35, 16.698730) rotate(-30) translate(-35, -16.698730) " cx="35" cy="16.6987298" r="6"></circle>
+					<circle id="11" transform="translate(16.698730,35) rotate(-60) translate(-16.698730, -35) " cx="16.6987298" cy="35" r="6"></circle>
+					<circle id="10" transform="translate(10, 60) rotate(-90) translate(-10, -60) " cx="10" cy="60" r="6"></circle>
+					<circle id="9" transform="translate(16.698730, 85) rotate(-120) translate(-16.698730, -85) " cx="16.6987298" cy="85" r="6"></circle>
+					<circle id="8" transform="translate(35, 103.301270) rotate(-150) translate(-35, -103.301270) " cx="35" cy="103.30127" r="6"></circle>
+					<circle id="7" cx="60" cy="110" r="6"></circle>
+					<circle id="6" transform="translate(85, 103.301270) rotate(-30) translate(-85, -103.301270) " cx="85" cy="103.30127" r="6"></circle>
+					<circle id="5" transform="translate(103.301270, 85) rotate(-60) translate(-103.301270, -85) " cx="103.30127" cy="85" r="6"></circle>
+					<circle id="4" transform="translate(110, 60) rotate(-90) translate(-110, -60) " cx="110" cy="60" r="6"></circle>
+					<circle id="3" transform="translate(103.301270, 35) rotate(-120) translate(-103.301270, -35) " cx="103.30127" cy="35" r="6"></circle>
+					<circle id="2" transform="translate(85, 16.698730) rotate(-150) translate(-85, -16.698730) " cx="85" cy="16.6987298" r="6"></circle>
+					<circle id="1" cx="60" cy="10" r="6"></circle>
+				</g>
+			</svg>
+			<!-- <p>正在加载...</p> -->
+		</div>
+	</div>
+	<!-- 网络异常 -->
+	<div class="network_error">
+		<p>
+			<span>网络异常，请重试！</span>
+		</p>
+	</div>
+	<div class="sharebox">
+		<div class="sharecontbox">
+			<div class="mainbox">
+				<div class="sharecommoditylist">
+					<div class="friendbox clearfix">
+						<p><img class="headimg" src="./img/friend.jpg" alt=""><span class="friendname">砍一刀！</span>
+							<span class="preferential"><b></b></span>
+							<span class="timeRential" id="dateShowX">
+								<d>距结束还剩</d>
+								<span class="isDateshow"><b class="date-tiem-span d">00</b>天</span>
+								<span><b class="date-tiem-span h">00</b>:</span>
+								<span><b class="date-tiem-span m">00</b>:</span>
+								<span><b class="date-s-span s">00</b></span>
+							</span> 
+						</p>
+					</div>
+					<div class="prizeGivebox">
+						<div class="prizeGivecont clearfix">
+							<div class="giveCont">
+								<h3>送你【京东50元电子卡】作为答谢！</h3>
+								<p>奖品12小时失效，请在有效期内领取</p>
+							</div>
+							<div class="giveContimg">
+								<img src="./img/img32.png" alt="">
+							</div>
+						</div>
+						<b>立即领取</b>
+					</div>
+					<div class="sharecommoditybox clearfix">
+						<div class="sharecommodityimg">
+							<img src="" alt="">
+						</div>
+						<div class="sharecommoditycont">
+							<div class="sharecommoditydescribe">
+								<h3 class="sharecommodityname"> </h3>
+								<!-- <p class="sharedynamics">5413人已砍价成功</p> -->
+								<del class="shareoriginalprice"></del>
+								<h2 class="sharepayprice"></h2>
+							</div>
+						</div>
+						<div class="sharecommoditybutton">
+							<button>砍价靠颜值，先来试一刀</button>
+						</div>
+						<div class="burrentPrice">
+							<button>当前价购买</button>
+						</div>
+						<div class="sharestate">
+							<p><span>8000</span>人已砍成功</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="axegang">
+				<h3 class="axegangtitle">我的斧头帮</h3>
+				<div class="axeganglist">
+					<ul>
+						
+					</ul>
+					<div class="axegangMore">
+						<p><span datamore='1'><b>展开更多<img src="./img/img7.png" alt=""></b></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="promote">
+				<h3 class="promotetitle">为你推荐</h3>
+				<div class="promotelist">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="sharebottompos">
+				<!-- <div class="sharebottom1">
+					<img src="./img/img4.jpg" alt="">
+				</div>
+				<div class="sharebottom2">
+					<img src="./img/img5.jpg" alt="">
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="index_mask cpt-dw-mask"></div>
+	<!-- 优惠券弹出框 -->
+    <div class="indexpopup_box">
+		<div>
+			<div class="indexpopup_cont" data-type="indexpopup_cont">
+				
+			</div>
+		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div class="Goodluck_background ">
+		<div class="Goodluck_rulesbox">
+			<div class="closePopupBoc">
+				<b><img src="./img/img20.png" alt=""></b>
+			</div>
+			<div>
+				<div class="Goodluck_physical logout_box ">
+					<div class="popupFrame_box">
+						<div class="popuptopbox logintitle">
+							<h3>请先进行登录</h3>
+						</div>
+						<div class="popupcontbox clearfix">
+							<div class="inputcontbox">
+								<p class="phoneNumbox"><input onkeyup="this.value=this.value.replace(/D/g,'')" oninput="value=value.replace(/[^\d]/g,'')" placeholder="输入手机号码" maxlength="11" class="phoneNum" type="text"></p>
+								<!-- http://test.www.phone580.com:8000/fzsCaptchaApi/captcah/captcah.jpg?key=a3d3c1b0c5610a38202a4fafa65af6f9 -->
+								<p class="graphicalbox"><input disabled="disabled" placeholder="输入图形验证码" maxlength="4" class="graphical" type="text"><b><img src="" alt=""></b></p>  
+								<p class="verificationbox"><input onkeyup="this.value=this.value.replace(/D/g,'')" oninput="value=value.replace(/[^\d]/g,'')" disabled="disabled" placeholder="请输入验证码" maxlength="6" class="verification" class="" type="text"><strong class="disabled">获取验证码</strong></p>
+							</div>
+							<p class="falsehints"></p>
+						</div>
+						<div class="signinbox">
+							<button disabled="disabled">登录</button>
+						</div>
+					</div>
+				</div>
+				<div class="Goodluck_physical firstKnife_box ">
+					<div class="popupFrame_box">
+						<div class="popuptopbox logintitle">
+							<h3><img src="" alt=""></h3>
+						</div>
+						<div>
+							<p class="firstKnifecont"></p>
+							<!-- <h3>首刀砍掉<b>388.88</b>元</h3> 多发几个好友圈砍得更快喔 -->
+						</div>
+					</div>
+					<div class="firstKnifecontbtn">
+						<button>找神补刀</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="WXTip" class="overlay mask">
+        <div class="no-tip">
+            <p>我很努力，无奈微信不让打开/下载</p>
+            <p>别担心，点击<em>右上角</em></p>
+            <p>选择<em>“浏览器中打开”</em>就能参与啦～～</p>
+        </div>
+    </div>
+	<!-- <script src="./js/jquery.min.js?v_001"></script>
+	<script src="./js/index.js?v_001"></script> -->
+	<script type="text/javascript" data-main="./js/index.js?v_003" src="./js/require.min.js?v_003"></script>
+	<!-- <div class="hide"><script src="https://s95.cnzz.com/z_stat.php?id=1262291806&web_id=1262291806" language="JavaScript"></script></div> -->
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+    <link class="style" rel="stylesheet" type="text/css" href="css/style.css?v_001">
+</head>
+<iframe name="indexIframe" class="hide" src="./index.html" frameborder="0"></iframe>
+
+<body class="order">
+	<!-- 正在加载 -->
+	<div id="load" class="overlay mask">
+		<div class="loading">
+			<!-- <div id="foo"></div> -->
+			<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="circle" class="g-circles g-circles--v3">
+					<circle id="12" transform="translate(35, 16.698730) rotate(-30) translate(-35, -16.698730) " cx="35" cy="16.6987298" r="6"></circle>
+					<circle id="11" transform="translate(16.698730,35) rotate(-60) translate(-16.698730, -35) " cx="16.6987298" cy="35" r="6"></circle>
+					<circle id="10" transform="translate(10, 60) rotate(-90) translate(-10, -60) " cx="10" cy="60" r="6"></circle>
+					<circle id="9" transform="translate(16.698730, 85) rotate(-120) translate(-16.698730, -85) " cx="16.6987298" cy="85" r="6"></circle>
+					<circle id="8" transform="translate(35, 103.301270) rotate(-150) translate(-35, -103.301270) " cx="35" cy="103.30127" r="6"></circle>
+					<circle id="7" cx="60" cy="110" r="6"></circle>
+					<circle id="6" transform="translate(85, 103.301270) rotate(-30) translate(-85, -103.301270) " cx="85" cy="103.30127" r="6"></circle>
+					<circle id="5" transform="translate(103.301270, 85) rotate(-60) translate(-103.301270, -85) " cx="103.30127" cy="85" r="6"></circle>
+					<circle id="4" transform="translate(110, 60) rotate(-90) translate(-110, -60) " cx="110" cy="60" r="6"></circle>
+					<circle id="3" transform="translate(103.301270, 35) rotate(-120) translate(-103.301270, -35) " cx="103.30127" cy="35" r="6"></circle>
+					<circle id="2" transform="translate(85, 16.698730) rotate(-150) translate(-85, -16.698730) " cx="85" cy="16.6987298" r="6"></circle>
+					<circle id="1" cx="60" cy="10" r="6"></circle>
+				</g>
+			</svg>
+			<!-- <p>正在加载...</p> -->
+		</div>
+	</div>
+	<!-- 网络异常 -->
+	<div class="network_error">
+		<p>
+			<span>网络异常，请重试！</span>
+		</p>
+	</div>
+	
+	<div class="orderbox">
+		<div class="ordercontbox">
+			<div class="mainbox">
+				<div class="addressboxs">
+					<div class="addresscont">
+						<div class="addressinput">
+							<input onkeyup="this.value=this.value.replace(/D/g,'')" oninput="value=value.replace(/[^\d]/g,'')" type="text" placeholder="请输入充值的手机号码" maxlength="11" name="" id="">
+							<b><img src="./img/img8.png" alt=""></b>
+						</div>
+						<div class="addressMaterial">
+							<h3><span class="addressName"></span> <span class="addressNum"></span></h3>
+							<p></p>
+						</div>
+						<p class="alapioperator"></p>
+					</div>
+				</div>
+				<div class="ordercommoditylist">
+					<div class="ordercommoditybox clearfix">
+						<div class="ordercommodityimg">
+							<img src="" alt="">
+						</div>
+						<div class="ordercommoditycont">
+							<div class="ordercommoditydescribe">
+								<h3 class="ordercommodityname"></h3>
+								<p class="orderdynamics"><span></span></p>
+								<div class="orderpricebox">
+									<h2 class="orderpayprice"></h2> <del class="orderoriginalprice"></del>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="tipsGift"></p>
+				</div>
+				<div class="invoiceboxx">
+					<div class="invoicecont">
+						<h2 class="invoiceChoice">开具发票<span>不可发票</span></h2>
+						<h2 class="couponChoice">优惠券<span>不可用券</span></h2>
+						<p class="growthValuebox clearfix"><img src="" alt=""><b class="growthbox">成长值 <span class="growthValue">+157</span> / </b> <b class='orangebox'>蜂蜜 <span class="orange">+12</span></b></p>
+					</div>
+				</div>
+				<div class="paymodebox">
+					<div class="paymentCont">
+						<div class="paymentMode">
+							<ul class="paymentList">
+								<li class="WXPAY choice">
+									<h3>微信<span>推荐安装微信5.0及以上版本</span><b><i></i></b></h3>
+								</li>
+								<li class="ALIPAY">
+									<h3>支付宝<span>推荐有支付宝账号的用户使用</span><b><i></i></b></h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="orderButtonbox">
+			<div class="buttonCont">
+				<p>总金额:<spsn class="orderPrice">￥<b>3288</b></spsn><span class="saveMoney">（已省￥3000）</span></p>
+				<button disabled="disabled">立即购买</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div class="index_mask cpt-dw-mask"></div> -->
+	<!-- 优惠券弹出框 -->
+    <div class="couponbox">
+		<div class="orderCoupon">
+			<div class="couponcont clipCoupons">
+				<div class="couponlist">
+					<h3 class="">优惠券</h3>
+					<div class="couponClose">
+						<b><img src="./img/img20.png" alt=""></b>
+					</div>
+					<div class="couponcontbox">
+						<div class="couponType">
+							<div class="effective">
+								<ul>
+									<li class="choice">
+										<div class="coupon_contbox">
+											<b class="coupontop"></b>
+											<b class="couponbottom"></b>
+											<div class="coupon_title">
+												<div class="titlecont">
+													<p class="denomination">￥<b>9999</b></p>
+													<p class="condition">满10000元可用</p>	
+												</div>									
+											</div>
+											<div class="innerbar_box">
+												<div class="innerbarcont">
+													<h3 class="coupontype">话费充值代金券</h3>
+													<p class="validity">2018-07-26 ~ 2018-08-02</p>
+												</div>
+											</div>
+											<b class="optionb"><i></i></b>
+										</div>
+									</li>
+									<li class="">
+										<div class="coupon_contbox">
+											<b class="coupontop"></b>
+											<b class="couponbottom"></b>
+											<div class="coupon_title">
+												<div class="titlecont">
+													<p class="denomination">￥<b>9999</b></p>
+													<p class="condition">满10000元可用</p>	
+												</div>									
+											</div>
+											<div class="innerbar_box">
+												<div class="innerbarcont">
+													<h3 class="coupontype">话费充值代金券</h3>
+													<p class="validity">有效期：2017.08.31</p>
+												</div>
+											</div>
+											<b class="optionb"><i></i></b>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="invalid">
+								<ul>
+									<li class="">
+										<div class="coupon_contbox">
+											<b class="coupontop"></b>
+											<b class="couponbottom"></b>
+											<div class="coupon_title">
+												<div class="titlecont">
+													<p class="denomination">￥<b>9999</b></p>
+													<p class="condition">满10000元可用</p>	
+												</div>									
+											</div>
+											<div class="innerbar_box">
+												<div class="innerbarcont">
+													<h3 class="coupontype">话费充值代金券</h3>
+													<p class="validity">有效期：2017.08.31</p>
+												</div>
+											</div>
+											<b class="optionb"><i></i></b>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="noCouponsbox">
+							<div class="noCouponscont">
+								<img src="./img/img21.png" alt="">
+								<p>您暂无可用优惠券</p>
+							</div>
+						</div>
+					</div>
+					<div class="couponCodebtn">
+						<h2><span>使用优惠码</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="couponcont clipCouponCode">
+				<div class="couponCodebox">
+					<h3 class="">优惠券</h3>
+					<div class="couponClose">
+						<b><img src="./img/img20.png" alt=""></b>
+					</div>
+					<!-- <div class="couponCodetitle">
+						
+					</div> -->
+					<div class="CouponCodeinput">
+						<input placeholder="请输入可兑换的优惠码" type="text">
+					</div>
+					<div class="CouponCodebutton">
+						<button disabled="disabled">立即使用</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div class="Goodluck_background ">
+		<div class="Goodluck_rulesbox">
+			<div>
+				<div class="Goodluck_physical wxpay_box ">
+					<div class="weui_dialog">
+					  	<div class="weui_dialog_hd"><strong class="weui_dialog_title">支付确认</strong></div>
+					  	<div class="weui_dialog_bd">
+							<p>1、请在微信内完成支付,支付成功页面自动跳转</p>
+							<p>2、如果您未支付,请点击“去支付”完成支付</p>
+							<p>3、如果您未安装微信6.0.2版本及以上客户端,请先安装并登陆微信完成支付</p>
+					  	</div>
+					  	<div class="weui_dialog_ft">
+							<a class="weui_btn_dialog paybtnDefault default">关闭</a>
+							<a class="weui_btn_dialog paybtnPrimary primary">去支付</a>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="./js/jquery.min.js?v_001"></script>
+	<script src="./js/index.js?v_001"></script> -->
+	<script type="text/javascript" data-main="./js/index.js?v_001" src="./js/require.min.js?v_001"></script>
+	<!-- <div class="hide"><script src="https://s95.cnzz.com/z_stat.php?id=1262291806&web_id=1262291806" language="JavaScript"></script></div> -->
+</body>
+</html>

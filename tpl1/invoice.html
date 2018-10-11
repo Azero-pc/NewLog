@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发票管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+    <link class="style" rel="stylesheet" type="text/css" href="css/style.css?v_001">
+</head>
+<iframe name="indexIframe" class="hide" src="./index.html" frameborder="0"></iframe>
+<body class="invoice">
+	<!-- 正在加载 -->
+	<div id="load" class="overlay mask">
+		<div class="loading">
+			<!-- <div id="foo"></div> -->
+			<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="circle" class="g-circles g-circles--v3">
+					<circle id="12" transform="translate(35, 16.698730) rotate(-30) translate(-35, -16.698730) " cx="35" cy="16.6987298" r="6"></circle>
+					<circle id="11" transform="translate(16.698730,35) rotate(-60) translate(-16.698730, -35) " cx="16.6987298" cy="35" r="6"></circle>
+					<circle id="10" transform="translate(10, 60) rotate(-90) translate(-10, -60) " cx="10" cy="60" r="6"></circle>
+					<circle id="9" transform="translate(16.698730, 85) rotate(-120) translate(-16.698730, -85) " cx="16.6987298" cy="85" r="6"></circle>
+					<circle id="8" transform="translate(35, 103.301270) rotate(-150) translate(-35, -103.301270) " cx="35" cy="103.30127" r="6"></circle>
+					<circle id="7" cx="60" cy="110" r="6"></circle>
+					<circle id="6" transform="translate(85, 103.301270) rotate(-30) translate(-85, -103.301270) " cx="85" cy="103.30127" r="6"></circle>
+					<circle id="5" transform="translate(103.301270, 85) rotate(-60) translate(-103.301270, -85) " cx="103.30127" cy="85" r="6"></circle>
+					<circle id="4" transform="translate(110, 60) rotate(-90) translate(-110, -60) " cx="110" cy="60" r="6"></circle>
+					<circle id="3" transform="translate(103.301270, 35) rotate(-120) translate(-103.301270, -35) " cx="103.30127" cy="35" r="6"></circle>
+					<circle id="2" transform="translate(85, 16.698730) rotate(-150) translate(-85, -16.698730) " cx="85" cy="16.6987298" r="6"></circle>
+					<circle id="1" cx="60" cy="10" r="6"></circle>
+				</g>
+			</svg>
+			<!-- <p>正在加载...</p> -->
+		</div>
+	</div>
+	<!-- 网络异常 -->
+	<div class="network_error">
+		<p>
+			<span>网络异常，请重试！</span>
+		</p>
+	</div>
+	<div class="invoicebox">
+		<div class="invoicecontbox">
+			<div class="mainbox">
+				<div class="invoiceTypebox">
+					<h3>发票类型</h3>
+					<div class="invoiceTypelist">
+						<ul class="clearfix">
+							<li data-type="no" class="select">不开发票<i></i></li>
+							<li data-type="yes" class="">纸质发票<i></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="invoiceTitlebox hide">
+					<div class="invoiceTitlecont">
+						<h3>发票抬头</h3>
+						<div class="invoiceTitlelist">
+							<ul class="clearfix">
+								<li data-type="ititle1" class="select">个人<i></i></li>
+								<li data-type="ititle2" class="">单位 <i></i></li>
+							</ul>
+						</div>
+					</div>
+					<div class="inputTitle">
+						<div class="personal">
+							<p><input placeholder="请输入个人名称" type="text"></p>
+						</div>
+						<div class="company hide">
+							<p><input placeholder="请输入公司名称" type="text"></p>
+							<p><input placeholder="请输入识别号" type="text"><img src="./img/img16.png" alt=""></p>
+						</div>
+					</div>
+				</div>
+				<div class="invoicebutton hide">
+					<button disabled="disabled">确定</button>
+					<p class="hide">请确保发票抬头、纳税人识别号或者 统一社会信用代码的填写正确，开票成功后无法更改</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="index_mask cpt-dw-mask"></div>
+	<!-- 优惠券弹出框 -->
+    <div class="indexpopup_box">
+		<div>
+			<div class="indexpopup_cont" data-type="indexpopup_cont">
+				
+			</div>
+		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div class="Goodluck_background ">
+		<div class="Goodluck_rulesbox">
+			<div>
+				<div class="Goodluck_physical logout_box ">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="./js/jquery.min.js?v_001"></script>
+	<script src="./js/index.js?v_001"></script> -->
+	<script type="text/javascript" data-main="./js/index.js?v_001" src="./js/require.min.js?v_001"></script>
+	<!-- <div class="hide"><script src="https://s95.cnzz.com/z_stat.php?id=1262291806&web_id=1262291806" language="JavaScript"></script></div> -->
+</body>
+</html>
